@@ -1,10 +1,11 @@
 FROM ubuntu:18.04
 
+RUN apt-get update && apt-get install jq && apt-get install python3 && apt-get install python3-pip
+
 RUN pip install joblib
 
 
 USER root
-RUN apt-get update && apt-get install jq
 
 RUN mkdir model raw_data processed_data results
 
