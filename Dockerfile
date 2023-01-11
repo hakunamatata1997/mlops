@@ -1,4 +1,4 @@
-FROM FROM ubuntu:18.04
+FROM ubuntu:18.04
 
 RUN pip install joblib
 
