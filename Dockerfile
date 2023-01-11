@@ -1,9 +1,11 @@
-FROM ubuntu:18.04
+FROM jupyter/scipy-notebook
 
-RUN apt-get update && apt-get install python && apt-get install python3-pip
+ENV http_proxy http://172.30.10.43:3128
+ENV https_proxy http://172.30.10.43:3128
 
 RUN pip install joblib
 
+RUN apt-get update && apt-get install -y jq
 
 USER root
 
