@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-RUN apt-get update && apt-get install jq && apt-get install python3 && apt-get install python3-pip
+RUN apt-get update && apt-get install python3 && apt-get install python3-pip
 
 RUN pip install joblib
 
